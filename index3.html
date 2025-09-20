@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanika Utekar | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #357ABD;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #4a90e2;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px 5px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      background: #eee;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      color: #ff5722;
+    }
+
+    /* Feedback form styles */
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form input[type="submit"] {
+      background: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background: #357ABD;
+    }
+
+    a.external-link {
+      color: #d84315;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.external-link:hover {
+      color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sanika Utekar</h1>
+    <p>Electronics & Telecommunication Student | Web Developer & Recipe Enthusiast</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="recipes.html" class="external-link">Recipe Book 🍴</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I'm Sanika, a passionate Electronics & Telecommunication student who enjoys building web apps and experimenting with recipes. I like solving real-world problems using technology and creativity.</p>
+      <p>Hobbies: Coding, Reading, Electronics DIY, Cooking.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.E. Electronics & Telecommunication</strong>, Atharva College of Engineering (2021-Present)</p>
+      <p><strong>HSC:</strong> Science, XYZ Junior College (2019-2021)</p>
+      <p><strong>SSC:</strong> ABC School (2019)</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>C / Embedded C</span>
+      <span>Verilog / FPGA</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>12-Hour Digital Clock (FPGA)</h3>
+      <p>Built a functional 12-hour digital clock using Verilog on an FPGA board.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud Cam Project</h3>
+      <p>Created a budget-friendly cloud camera using ESP32 and Raspberry Pi, capable of live streaming and motion detection.</p>
+    </div>
+    <div class="card">
+      <h3>Recipe Finder Web App</h3>
+      <p>A web app that helps users find recipes based on ingredients they have at home.</p>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Secured 1st place in college-level coding hackathon.</li>
+        <li>Successfully completed online internships in Web Development & IoT.</li>
+        <li>Published mini project on cloud-based IoT monitoring.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Feedback -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <div class="card">
+      <p>I'd love to hear your thoughts! Please leave your feedback below:</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Your feedback..." required></textarea><br>
+
+        <input type="submit" value="Submit Feedback">
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:sanikautekar@example.com">sanikautekar@example.com</a></p>
+      <p>Phone: +91 9876543210</p>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sanika Utekar | Portfolio</p>
+  </footer>
+
+</body>
+</html>
